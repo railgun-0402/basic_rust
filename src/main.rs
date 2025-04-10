@@ -36,3 +36,15 @@ pub fn basic_variable() {
         x, a, b, c, bv, t.0, t.1, sentence
     );
 }
+
+fn type_convert() {
+    // u8とu32を混ぜるとエラーになる
+    let a = 15u8;
+    let b = 4u32;
+    // asで数値型を変換する
+    let c = a as u32 + b;
+    println!("{}", c);
+
+    let t = true;
+    println!("{}", t);
+}
